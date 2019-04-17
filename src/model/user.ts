@@ -1,15 +1,23 @@
-export class User {
-  userId: number;
-  username: string;
-  password: string;
-  name: string;
-  role: string;
+import { Role } from "./Role";
 
-  constructor(userId = 0, username = '', password = '', name = '', role = 'associate') {
-    this.userId = userId;
-    this.username = username;
+export class User {
+  user_Id: number;
+  user_name: string;
+  password: string;
+  firstname: string;
+  lastname: string;
+  email: string;
+  user_role : Role;
+
+
+  constructor(user_Id = 0, user_name = '', password = '', 
+  firstname = '', lastName = '', user_role = undefined, email = '',) {
+    this.user_Id = user_Id;
+    this.user_name = user_name;
     this.password = password;
-    this.name = name;
-    this.role = role;
+    this.firstname = firstname;
+    this.lastname = lastName
+    this.user_role = user_role;
+    this.email = email;
   }
 }
