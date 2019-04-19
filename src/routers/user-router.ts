@@ -70,4 +70,3 @@ userRouter.patch('', [
     res.json(newUser);
     
   }]);
-
